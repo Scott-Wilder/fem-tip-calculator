@@ -20,7 +20,13 @@
       <div class="top">
         <form>
           <label for="bill">Bill</label><br />
-          <input type="text" id="bill" name="bill" placeholder="$" />
+          <input
+            type="text"
+            id="bill"
+            name="bill"
+            placeholder="$"
+            oninput="getBill()"
+          />
         </form>
         <p>Select Tip %</p>
         <input type="button" class="button" value="5%" />
@@ -36,7 +42,7 @@
       </div>
       <div class="bottom">
         <p>Tip Amount</p>
-        <p>/ person</p>
+        <p>/ person $<em id="tipSplit"></em></p>
         <p>Total</p>
         <p>/ person</p>
         <p>Reset</p>
@@ -51,5 +57,6 @@
         >. Coded by <a href="#">Your Name Here</a>.
       </div>
     </footer>
+    <script src="myscript.js"></script>
   </body>
 </html>
