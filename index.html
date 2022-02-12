@@ -16,6 +16,10 @@
     <title>Frontend Mentor | Tip calculator app</title>
   </head>
   <body>
+    <div>
+      <h1>SPLI</br>TTER</h1>
+    </div>
+    <div class="main-bottom">
     <div class="main">
       <div class="top">
         <form>
@@ -31,62 +35,67 @@
         <p>Select Tip %</p>
         <input
           type="button"
-          id="5%"
+          id="button-1"
           class="button"
           value="5%"
           onclick="getTip(.05)"
         />
         <input
           type="button"
-          id="10%"
+          id="button-2"
           class="button"
           value="10%"
           onclick="getTip(.10)"
         /><br />
         <input
           type="button"
-          id="15%"
+          id="button-3"
           class="button"
           value="15%"
           onclick="getTip(.15)"
         />
         <input
           type="button"
-          id="25%"
+          id="button-4"
           class="button"
           value="25%"
           onclick="getTip(.25)"
         /><br />
         <input
           type="button"
-          id="50%"
+          id="button-5"
           class="button"
           value="50%"
           onclick="getTip(.50)"
         />
-        <input type="button" id="5%" class="button" value="Custom" />
+        <input type="button" id="button-6" class="button" value="Custom" onclick="getTip(0)"/>
         <form>
           <label for="people">Number of People</label><br />
           <input type="text" id="people" name="people" oninput="getBill()" />
         </form>
       </div>
       <div class="bottom">
-        <p>Tip Amount</p>
-        <p>/ person $<em id="tipSplit"></em></p>
-        <p>Total</p>
-        <p>/ person <em id="totalSplit"></em></p>
+        <div class="bottom-left">
+          <p>Tip Amount</p>
+          <p>
+            / person <em id="tipSplit"></em></em>
+          </p>
+          <p>Total</p>
+          <p>/ person <em id="totalSplit"></em></p>
+        </div>
         <p>Reset</p>
       </div>
     </div>
-
-    <footer>
+  
+    <div>
       <div class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by <a href="#">Scott Wilder</a>.
       </div>
-    </footer>
+    </div>
+  </div>
     <script src="myscript.js"></script>
   </body>
 </html>

@@ -3,7 +3,7 @@ function getBill() {
   var people = document.getElementById("people").value;
   var total = bill / people;
   console.log(total);
-  document.getElementById("totalSplit").innerHTML = total.toPrecision(4);
+  document.getElementById("totalSplit").innerHTML = "$" + total.toPrecision(4);
 }
 function getTip(x) {
   var bill = document.getElementById("bill").value;
@@ -12,5 +12,5 @@ function getTip(x) {
   var people = document.getElementById("people").value;
   var tipSplit = tipAmount / people;
   console.log(tipSplit);
-  document.getElementById("tipSplit").innerHTML = tipSplit.toPrecision(4);
+  document.getElementById("tipSplit").innerHTML = "$" + tipSplit.toPrecision(4);
 }

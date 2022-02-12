@@ -84,9 +84,7 @@ select {
 /*RESET CSS End*/
 body {
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-direction: column;
   background-color: hsl(185, 41%, 84%);
 }
 .main {
@@ -94,12 +92,35 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 24px;
+}
+.main-bottom {
+  position: absolute;
+  bottom: 0;
 }
 .top {
   background-color: white;
+  padding: 4rem;
+  border-radius: 24px;
 }
 .bottom {
-  width: 25em;
-  height: 10rem;
+  padding: 4rem;
   background-color: hsl(183, 100%, 15%);
+  border-radius: 24px;
+  width: 100%;
+}
+#button-1,
+#button-2,
+#button-3,
+#button-4,
+#button-5,
+#button-6 {
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+  margin: 0.5rem;
+  width: 5rem;
+}
+#tipSplit,
+#totalSplit {
+  margin-left: 5rem;
 }
