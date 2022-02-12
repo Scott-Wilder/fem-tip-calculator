@@ -29,22 +29,52 @@
           />
         </form>
         <p>Select Tip %</p>
-        <input type="button" class="button" value="5%" />
-        <input type="button" class="button" value="10%" /><br />
-        <input type="button" class="button" value="15%" />
-        <input type="button" class="button" value="25%" /><br />
-        <input type="button" class="button" value="50%" />
-        <input type="button" class="button" value="Custom" />
+        <input
+          type="button"
+          id="5%"
+          class="button"
+          value="5%"
+          onclick="getTip(.05)"
+        />
+        <input
+          type="button"
+          id="10%"
+          class="button"
+          value="10%"
+          onclick="getTip(.10)"
+        /><br />
+        <input
+          type="button"
+          id="15%"
+          class="button"
+          value="15%"
+          onclick="getTip(.15)"
+        />
+        <input
+          type="button"
+          id="25%"
+          class="button"
+          value="25%"
+          onclick="getTip(.25)"
+        /><br />
+        <input
+          type="button"
+          id="50%"
+          class="button"
+          value="50%"
+          onclick="getTip(.50)"
+        />
+        <input type="button" id="5%" class="button" value="Custom" />
         <form>
           <label for="people">Number of People</label><br />
-          <input type="text" id="bill" name="bill" />
+          <input type="text" id="people" name="people" oninput="getBill()" />
         </form>
       </div>
       <div class="bottom">
         <p>Tip Amount</p>
         <p>/ person $<em id="tipSplit"></em></p>
         <p>Total</p>
-        <p>/ person</p>
+        <p>/ person <em id="totalSplit"></em></p>
         <p>Reset</p>
       </div>
     </div>
