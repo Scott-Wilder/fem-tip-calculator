@@ -102,10 +102,13 @@ body {
 .main-bottom {
   position: absolute;
   bottom: 0;
+  margin-bottom: -1rem;
 }
 .top {
   background-color: hsl(0, 0%, 100%);
   border-radius: 24px;
+  max-width: 600px;
+  padding: 1rem;
 }
 .bottom {
   padding: 3rem;
@@ -170,8 +173,8 @@ form {
 #tipSplit,
 #totalSplit {
   margin-left: 5rem;
+  font-size: 24px;
   font-weight: 700;
-  font-size: larger;
 }
 em {
   color: hsl(172, 67%, 45%);
@@ -188,6 +191,8 @@ em {
   background-color: hsl(189, 41%, 97%);
   padding: 1rem;
   color: hsl(183, 100%, 15%);
+  font-size: 21px;
+  font-weight: 700;
 }
 #people {
   background-image: url("images/icon-person.svg");
@@ -201,6 +206,8 @@ em {
   background-color: hsl(189, 41%, 97%);
   padding: 1rem;
   color: hsl(183, 100%, 15%);
+  font-size: 21px;
+  font-weight: 700;
 }
 #total1 {
   color: hsl(0, 0%, 100%);
@@ -209,7 +216,33 @@ em {
   color: hsl(184, 14%, 56%);
 }
 h1 {
-  padding-top: 1rem;
   letter-spacing: 0.5rem;
   color: hsl(184, 14%, 56%);
+}
+
+/*Desktop View*/
+@media (min-width: 1080px) {
+  .main {
+    flex-direction: row;
+  }
+  .main-bottom {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
+  .bottom {
+    width: auto;
+  }
+  h1 {
+    padding-top: 1rem;
+    position: absolute;
+    padding-left: 25rem;
+    padding-top: 5rem;
+  }
+  #people,
+  #bill {
+    width: 80%;
+  }
 }
