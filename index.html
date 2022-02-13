@@ -28,11 +28,10 @@
             type="text"
             id="bill"
             name="bill"
-            placeholder="$"
             oninput="getBill()"
           />
         </form>
-        <p>Select Tip %</p>
+        <p id="selectTipP">Select Tip %</p>
         <input
           type="button"
           id="button-1"
@@ -76,14 +75,14 @@
       </div>
       <div class="bottom">
         <div class="bottom-left">
-          <p>Tip Amount</p>
-          <p>
-            / person <em id="tipSplit"></em></em>
+          <p id="total1">Tip Amount</p>
+          <p id="total2">
+            / person <em id="tipSplit"></em>
           </p>
-          <p>Total</p>
-          <p>/ person <em id="totalSplit"></em></p>
+          <p id="total1">Total</p>
+          <p id="total2">/ person <em id="totalSplit"></em></p>
         </div>
-        <p>Reset</p>
+        <input type="button" id="button-7" class="button" value="Reset" onclick="getTip(0)"/>
       </div>
     </div>
   
