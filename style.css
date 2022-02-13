@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Space+Mono");
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -86,6 +87,7 @@ body {
   display: flex;
   justify-content: center;
   background-color: hsl(185, 41%, 84%);
+  font-family: Space Mono;
 }
 .main {
   background-color: white;
@@ -100,7 +102,7 @@ body {
 }
 .top {
   background-color: white;
-  padding: 4rem;
+  padding: 2rem;
   border-radius: 24px;
 }
 .bottom {
@@ -108,6 +110,9 @@ body {
   background-color: hsl(183, 100%, 15%);
   border-radius: 24px;
   width: 100%;
+}
+form {
+  padding: 1rem;
 }
 #button-1,
 #button-2,
@@ -118,9 +123,26 @@ body {
   background-color: hsl(183, 100%, 15%);
   color: white;
   margin: 0.5rem;
-  width: 5rem;
+  width: 8rem;
+  height: 3rem;
 }
 #tipSplit,
 #totalSplit {
   margin-left: 5rem;
+}
+#bill {
+  background-image: url("images/icon-dollar.svg");
+  background-repeat: no-repeat;
+  background-position: 0.5rem;
+  text-align: right;
+  border-radius: 4px;
+  width: 100%;
+}
+#people {
+  background-image: url("images/icon-person.svg");
+  background-repeat: no-repeat;
+  background-position: 0.5rem;
+  text-align: right;
+  border-radius: 4px;
+  width: 100%;
 }
