@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/vanilla-js-tip-calculator-K-4eZ7SfM)
-- Live Site URL: [Add live site URL here](https://scott-wilder.github.io/)
+- Solution URL: [Solution URL here](https://www.frontendmentor.io/solutions/vanilla-js-tip-calculator-K-4eZ7SfM)
+- Live Site URL: [Live site URL here](https://scott-wilder.github.io/)
 
 ## My process
 
