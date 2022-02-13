@@ -124,6 +124,8 @@ form {
   height: 3rem;
   border-radius: 8px;
   border: 0px;
+  font-size: 21px;
+  font-weight: 700;
 }
 #button-6 {
   background-color: hsl(189, 41%, 97%);
@@ -156,12 +158,14 @@ form {
 #button-7 {
   width: 100%;
   background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
   margin-top: 1rem;
   margin-bottom: -1rem;
+  font-size: 21px;
+  font-weight: 700;
 }
 #button-7:hover {
   background-color: hsl(189, 41%, 97%);
-  color: hsl(186, 14%, 43%);
 }
 #tipSplit,
 #totalSplit {
